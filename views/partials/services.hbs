@@ -1,0 +1,22 @@
+<section id="service_section" class="py-4 background3">
+     <div class="container">
+      <h1 class="text-center" style="color: white;" >Services that we provides</h1>
+        <div class="row mt-5 ">
+            {{#each data.servic}}
+            <div class="col-md-4">
+                <div class="card mt-4 ">
+                    <div class="card-body">
+                        <div class="container text-center ">
+                        <i class="{{this.serviceIcon}} service-icon"></i>
+                        </div>
+                        <h5>{{this.serviceHeading}}</h5>
+                        <p> {{this.serviceText}} </p>
+                        <a href="{{this.link1.0.url}}"> {{this.link1.0.text}} </a>
+                        <a href="{{this.link2.0.url}}" class="mx-4" >{{this.link2.0.text}}</a>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+         </div>
+    </div>
+</section>
